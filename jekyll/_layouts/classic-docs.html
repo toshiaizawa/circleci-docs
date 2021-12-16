@@ -54,7 +54,7 @@
                 <span class="ert" title="Estimated reading time">
                   {% assign words = page.content | strip_html | number_of_words %}
                   {% assign ert = words | divided_by:250 | at_least: 1 %}
-                  {{ ert }} MIN{% if ert != 1 %}S{% endif %} READ
+                  • {{ ert }} MIN{% if ert != 1 %}S{% endif %} READ
                 </span>
               </div>
             </time>
