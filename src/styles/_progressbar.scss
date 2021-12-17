@@ -1,0 +1,53 @@
+// // .outer:before {
+// //     content: "";
+// //     display: block;
+// //     background: green;
+// //     height: 5px;
+// //     width: 100%;
+// //     position: sticky;
+// //     top: 68px;
+// //     left: 0;
+// //     z-index: 100;
+// // }
+
+// // .outer:after {
+// //     height: calc(100% - 100vh - 5px);
+// // }
+
+// .global-nav--component::after {
+//     content: "";
+//     position: absolute;
+//     height: 5px;
+//     width: 50%;
+//     background: green;
+// }
+
+.main-body {
+    margin-top: 2px;
+}
+
+// add <div id="progress-bar" /> between .global-nav--component and #hits-target inside .outer div
+#progress-bar {
+    height: 2px;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 -1px 18px 0 #000000BD;
+    z-index: 1029;
+    top: 68px;
+}
+
+body {
+    background: linear-gradient(27deg, #008647 50%, #fff 50%);
+    background-size: 100% calc(100% - 100vh + 74px);
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: white;
+}
